@@ -1,0 +1,1 @@
+export default () => "I am the about page"
