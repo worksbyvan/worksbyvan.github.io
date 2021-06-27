@@ -1,0 +1,26 @@
+// font variables
+$bodyFont: "Raleway", sans-serif;
+$headerFont: "Abril Fatface", cursive;
+
+// color variables
+$bodyColor: #6e819b;
+$primaryColor: #f1c9d6;
+$primaryColorLight: #f6e3ea;
+
+// timing variables
+$transitionTiming: 0.25s;
+
+// breakpoint & sizing variables
+$column: 500px;
+$columnPadding: 20px;
+$columnWithPadding: $column + ($columnPadding * 2);
+$min: 750px;
+$max: 1200px;
+
+@import "./reset.scss";
+@import "./typography.scss";
+
+// components
+@import "./components/header.scss";
+@import "./components/section.scss";
+@import "./components/pageLinks.scss";

@@ -1,0 +1,24 @@
+body {
+  font-family: $bodyFont;
+  line-height: 1.5;
+  color: $bodyColor;
+  font-size: 0.8rem;
+
+  @media (max-width: $columnWithPadding) {
+    font-size: 2.5vw;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headerFont;
+}
+
+// links
+a {
+  text-decoration: none;
+}

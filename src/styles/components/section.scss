@@ -1,0 +1,25 @@
+.section {
+  width: 100%;
+  text-align: center;
+
+  &:first-of-type {
+    margin-top: calc(50vh - #{$column / 2});
+  }
+
+  @media (max-width: $min) {
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &__column {
+    display: inline-block;
+    text-align: left;
+    width: calc(100% - #{$columnPadding * 2});
+    max-width: $column;
+
+    img {
+      width: 100%;
+    }
+  }
+}

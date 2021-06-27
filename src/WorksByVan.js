@@ -1,17 +1,23 @@
-import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './routes/Home/Home';
-import About from './routes/About/About';
+import { HashRouter, Route, Switch } from "react-router-dom";
+import "./styles/App.scss";
+import Header from "./components/Header/Header";
+import Home from "./pages/Home/Home";
+import Contact from "./pages/Contact/Contact";
+import Work from "./pages/Work/Work";
+import Projects from "./pages/Projects/Projects";
 
-export default class WorksByVan extends React.Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-        </Switch>
-      </BrowserRouter>
-    )
-  }
+function App() {
+  return (
+    <HashRouter>
+      <Header />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/contact" exact component={Contact} />
+        <Route path="/work" exact component={Work} />
+        <Route path="/projects" exact component={Projects} />
+      </Switch>
+    </HashRouter>
+  );
 }
+
+export default App;
