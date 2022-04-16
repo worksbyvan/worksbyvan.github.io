@@ -1,10 +1,11 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import WorksByVan from "./WorksByVan";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "modern-css-reset";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <WorksByVan />
-  </React.StrictMode>,
-  document.getElementById("root")
+    <App />
+  </React.StrictMode>
 );
