@@ -4,9 +4,9 @@ export default function BottomText() {
   return (
     <div className={styles.container}>
       <p>
-        Hey there! I'm Van Huynh,{" "}
-        <i className={styles.highlight}>software engineer + designer hybrid</i>{" "}
-        and a serial first hire for startups.
+        Hey there! I'm Van Huynh{" "}
+        <i className={styles.highlight}>software engineer + designer hybrid</i>,{" "}
+        serial first hire for startups, UPenn graduate, ex-Disney.
       </p>
       <p>
         I specialize in independently designing & building MVPs. Let's chat:{" "}
