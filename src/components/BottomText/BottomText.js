@@ -9,7 +9,7 @@ export default function BottomText() {
         and a serial first hire for startups.
       </p>
       <p>
-        I specialize in independently building MVPs. Let's chat:{" "}
+        I specialize in independently designing & building MVPs. Let's chat:{" "}
         <a className={styles.email} href="mailto:worksbyvan@gmail.com">
           worksbyvan@gmail.com
         </a>
