@@ -1,0 +1,40 @@
+.container {
+  font-family: poppins, sans-serif;
+  color: var(--white-color);
+  display: flex;
+  flex-flow: column nowrap;
+  position: fixed;
+  bottom: 0;
+  left: 2rem;
+  font-size: 1rem;
+  padding-bottom: 2rem;
+  padding-right: 2rem;
+  line-height: 1.5;
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.highlight {
+  color: var(--yellow-color);
+  font-style: normal;
+}
+
+.email {
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 0 0.25rem;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) calc(80% - 1px),
+    var(--yellow-color) calc(80% - 1px),
+    var(--yellow-color) calc(80% + 1px),
+    rgba(0, 0, 0, 0) calc(80% + 1px)
+  );
+
+  &:hover {
+    color: var(--blue-color);
+    background-color: var(--yellow-color);
+  }
+}
